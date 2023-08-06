@@ -1,6 +1,5 @@
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/John-Cv.pdf";
+import AboutImg from "../../assets/about.png";
 import Info from "./Info";
 
 const About = () => {
@@ -21,8 +20,8 @@ const About = () => {
             projects carried out.
           </p>
 
-          <a download="" href={CV} className="button button--flex">
-            Download CV
+          <a href="#portfolio" className="button button--flex">
+            See Projects
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
