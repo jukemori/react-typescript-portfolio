@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Smith</h1>
+        <h1 className="footer__title">Jun Ukemori</h1>
 
         <ul className="footer__list">
           <li>
@@ -14,14 +14,14 @@ const Footer = () => {
           </li>
 
           <li>
-            <a href="#portfolio" className="footer__link">
-              Portfolio
+            <a href="#qualification" className="footer__link">
+              Background
             </a>
           </li>
 
           <li>
-            <a href="#testimonials" className="footer__link">
-              Testimonials
+            <a href="#portfolio" className="footer__link">
+              Projects
             </a>
           </li>
         </ul>
@@ -51,10 +51,6 @@ const Footer = () => {
             <i className="bx bxl-twitter"></i>
           </a>
         </div>
-
-        <span className="footer__copy">
-          &#169; Crypticalcoder. All rigthts reserved
-        </span>
       </div>
     </footer>
   );
