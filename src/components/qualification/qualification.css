@@ -26,7 +26,11 @@
 }
 
 .qualification__active {
-  color: var(--title-color-dark);
+  color: var(--orange-color);
+}
+
+.qualification__active:hover {
+  color: var(--orange-color-light);
 }
 
 .qualification__sections {
@@ -68,7 +72,7 @@
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--text-color);
+  background-color: var(--orange-color);
   border-radius: 50%;
 }
 
@@ -76,7 +80,7 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--text-color);
+  background-color: var(--orange-color-light);
   transform: translate(6px, -7px);
 }
 
