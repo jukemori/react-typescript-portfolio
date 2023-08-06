@@ -49,12 +49,12 @@ function Qualification() {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Design</h3>
+                <h3 className="qualification__title">Web Delopment</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Le Wagon - Tokyo
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021 - Present
+                  <i className="uil uil-calendar-alt"></i> 2023 - 2023
                 </div>
               </div>
 
@@ -72,24 +72,24 @@ function Qualification() {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Art Director</h3>
+                <h3 className="qualification__title">Sports Management</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  SUNY Canton - NY, USA
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                  <i className="uil uil-calendar-alt"></i> 2018 - 2019
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Web Development</h3>
+                <h3 className="qualification__title">Liberal Arts</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  Northwest college - WY, USA
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                  <i className="uil uil-calendar-alt"></i> 2016 - 2017
                 </div>
               </div>
 
@@ -107,12 +107,12 @@ function Qualification() {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">UX Expert</h3>
+                <h3 className="qualification__title">Liberal Arts</h3>
                 <span className="qualification__subtitle">
-                  Spain - Institute
+                  De Anza College - CA, USA
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2017 - 2018
+                  <i className="uil uil-calendar-alt"></i> 2015 - 2016
                 </div>
               </div>
             </div>
