@@ -23,11 +23,11 @@
 
 .home__social-icon {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--orange-color);
 }
 
 .home__social-icon:hover {
-  color: var(--title-color-dark);
+  color: var(--orange-color-light);
 }
 
 .home__title {
@@ -65,7 +65,7 @@
 }
 
 .home__img {
-  background: url(../../assets/profile.jpg);
+  background: url(../../assets/profile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -162,7 +162,6 @@
 @media screen and (max-width: 768px) {
   .home__content {
     grid-template-columns: 0.5fr 3fr;
-    padding-top: 3.5rem;
   }
 
   .home__img {
@@ -175,7 +174,7 @@
   }
 
   .home__img {
-    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 0 0 6px var(--orange-color-light);
     width: 200px;
     height: 200px;
   }
