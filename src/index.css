@@ -14,6 +14,8 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  --orange-color:  hsl(	24, 100%, 50%);
+  --orange-color-light:  hsl(	24, 100%, 60%);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -149,15 +151,16 @@ img {
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: var(--orange-color);
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--orange-color-light);
 }
 
 .button__icon {
