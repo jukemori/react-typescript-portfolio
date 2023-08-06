@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  height: 100vh;
+  height: 100svh;
   align-items: center;
 }
 
@@ -116,7 +116,7 @@
 
 .home__scroll-arrow {
   font-size: 1.25rem;
-  color: var(--title-color);
+  color: var(--orange-color);
 }
 
 /* BREAKPOINTS */

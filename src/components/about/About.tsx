@@ -5,7 +5,7 @@ import Info from "./Info";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About</h2>
+      <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
@@ -15,9 +15,9 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
+            In 2023, I completed coding bootcamp, and I love building web apps
+            by Ruby on Rails and React. Outside of coding, I enjoy participating
+            in sports such as football and boxing
           </p>
 
           <a href="#portfolio" className="button button--flex">
