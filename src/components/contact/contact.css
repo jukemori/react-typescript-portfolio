@@ -47,7 +47,7 @@
 }
 
 .contact__button {
-  color: var(--text-color);
+  color: var(--orange-color);
   font-size: var(--small-font-size);
   display: inline-flex;
   align-items: center;
@@ -62,6 +62,10 @@
 
 .contact__button:hover .contact__button-icon {
   transform: translateX(0.25rem);
+}
+
+.contact__button:hover {
+  color: var(--orange-color-light);
 }
 
 .contact__form {

@@ -46,7 +46,7 @@
 }
 
 .work__button {
-  color: var(--text-color);
+  color: var(--orange-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
@@ -62,6 +62,9 @@
   transform: translateX(0.25rem);
 }
 
+.work__button:hover {
+  color: var(--orange-color-light);
+}
 /* active work */
 
 .active-work {

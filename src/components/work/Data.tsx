@@ -8,32 +8,38 @@ export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "Web design",
-    category: "web",
+    title: "Wolf Minute",
+    category: "rails",
   },
   {
     id: 2,
     image: Work2,
-    title: "App movil",
-    category: "app",
+    title: "FriendZone",
+    category: "rails",
   },
   {
     id: 3,
     image: Work3,
-    title: "Brand design",
-    category: "design",
+    title: "Retail App",
+    category: "react",
   },
   {
     id: 4,
     image: Work4,
-    title: "App movil",
-    category: "app",
+    title: "Movie Watchlist",
+    category: "rails",
   },
   {
     id: 5,
     image: Work5,
-    title: "Web design",
-    category: "web",
+    title: "Product Cards",
+    category: "react",
+  },
+  {
+    id: 6,
+    image: Work5,
+    title: "Longest word game",
+    category: "rails",
   },
 ];
 
@@ -42,12 +48,9 @@ export const projectsNav = [
     name: "all",
   },
   {
-    name: "web",
+    name: "react",
   },
   {
-    name: "app",
-  },
-  {
-    name: "design",
+    name: "rails",
   },
 ];

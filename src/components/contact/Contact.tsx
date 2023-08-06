@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <span className="section__subtitle">My contact</span>
 
       <div className="contact__container container grid">
         <div className="contact__content">
@@ -45,8 +45,9 @@ const Contact = () => {
               <span className="contact__card-data">jukemori@gmail.com</span>
 
               <a
-                href="mailto:examplemail@gmail.com.com"
+                href="mailto:jukemori@gmail.com"
                 className="contact__button"
+                target="_blank"
               >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -62,6 +63,7 @@ const Contact = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=817084779756&text=Hello, more information!"
                 className="contact__button"
+                target="_blank"
               >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -74,7 +76,11 @@ const Contact = () => {
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact__card-data">jukemori</span>
 
-              <a href="" className="contact__button">
+              <a
+                href="https://m.me/jukemori"
+                className="contact__button"
+                target="_blank"
+              >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -83,7 +89,7 @@ const Contact = () => {
         </div>
 
         <div className="contact__content">
-          <h3 className="contact__title">Cantact me</h3>
+          <h3 className="contact__title">Contact me</h3>
 
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
