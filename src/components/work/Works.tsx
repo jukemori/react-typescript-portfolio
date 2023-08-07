@@ -4,9 +4,16 @@ import WorkItems from "./WorkItems";
 
 interface Project {
   id: number;
-  image: string;
   title: string;
+  image: {
+    main: string;
+    sub: string;
+  };
   category: string;
+  description: string;
+  source: string;
+  tags: string[];
+  url?: string;
 }
 
 function Works() {

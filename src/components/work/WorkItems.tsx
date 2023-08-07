@@ -45,39 +45,34 @@ function WorkItems({ item }: WorkItem) {
             onClick={() => toggleTab(0)}
             className="uil uil-times work__modal-close"
           ></i>
+          <img src={item.image.sub} alt="" className="work__modal-img" />
 
           <h3 className="work__modal-title">{item.title}</h3>
-          <p className="work__modal-description">
-            Development of responsive web pages with React.js. Validate UX on
-            Figma.
-          </p>
+          <p className="work__modal-description">{item.description}</p>
 
-          <ul className="work__modal-work grid">
-            <li className="work__modal-skill">
-              <i className="uil uil-check-circle work__modal-icon"></i>
-              <p className="work__modal-info">HTML</p>
-            </li>
-
-            <li className="work__modal-skill">
-              <i className="uil uil-check-circle work__modal-icon"></i>
-              <p className="work__modal-info">CSS</p>
-            </li>
-
-            <li className="work__modal-skill">
-              <i className="uil uil-check-circle work__modal-icon"></i>
-              <p className="work__modal-info">Javascript</p>
-            </li>
-
-            <li className="work__modal-skill">
-              <i className="uil uil-check-circle work__modal-icon"></i>
-              <p className="work__modal-info">React</p>
-            </li>
-
-            <li className="work__modal-skill">
-              <i className="uil uil-check-circle work__modal-icon"></i>
-              <p className="work__modal-info">Figma</p>
-            </li>
+          <ul className="work__modal-skills">
+            {item.tags.map((tag) => {
+              return (
+                <li className="work__modal-skill">
+                  <i className={`${tag} work__modal-icon`}></i>
+                </li>
+              );
+            })}
           </ul>
+          <div className="work__modal-buttons">
+            {item.url && (
+              <a href={item.url} target="_blank">
+                <button className="work__modal-button">
+                  <i className="bx bx-link-external"></i> Demo
+                </button>
+              </a>
+            )}
+            <a href={item.source} target="_blank">
+              <button className="work__modal-button">
+                <i className="bx bxl-github"></i> Source
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </>
