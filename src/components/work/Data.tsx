@@ -1,8 +1,9 @@
-import Work1 from "../../assets/work1.jpg";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import Work1 from "../../assets/projects/wolfminute/main.png";
+import Work2 from "../../assets/projects/friendzone/main.png";
+import Work3 from "../../assets/projects/retailing/main.png";
+import Work4 from "../../assets/projects/watchlist/main.png";
+import Work5 from "../../assets/projects/product-cards/main.png";
+import Work6 from "../../assets/projects/word-game/main.png";
 
 export const projectsData = [
   {
@@ -37,7 +38,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    image: Work5,
+    image: Work6,
     title: "Longest word game",
     category: "rails",
   },
