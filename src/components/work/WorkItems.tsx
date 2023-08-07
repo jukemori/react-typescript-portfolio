@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Slide } from "react-awesome-reveal";
 
 interface WorkItem {
   item: {
@@ -23,18 +24,22 @@ function WorkItems({ item }: WorkItem) {
     setToggleState(id);
   };
 
+  const slideDirection = item.id % 2 === 0 ? "right" : "left";
+
   return (
     <>
-      <div className="work__card" key={item.id}>
-        <img src={item.image.main} alt="" className="work__img" />
-        <div className="work__card--hover">
-          <h3 className="work__title">{item.title}</h3>
-          <span className="work__button" onClick={() => toggleTab(item.id)}>
-            View More{" "}
-            <i className="bx bx-right-arrow-alt work__button-icon"></i>
-          </span>
+      <Slide direction={slideDirection}>
+        <div className="work__card" key={item.id}>
+          <img src={item.image.main} alt="" className="work__img" />
+          <div className="work__card--hover">
+            <h3 className="work__title">{item.title}</h3>
+            <span className="work__button" onClick={() => toggleTab(item.id)}>
+              View More{" "}
+              <i className="bx bx-right-arrow-alt work__button-icon"></i>
+            </span>
+          </div>
         </div>
-      </div>
+      </Slide>
       <div
         className={
           toggleState === item.id ? "work__modal active-modal" : "work__modal"
