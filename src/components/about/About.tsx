@@ -20,7 +20,7 @@ const About = () => {
             in sports such as football and boxing
           </p>
 
-          <a href="#portfolio" className="button button--flex">
+          <a href="#projects" className="button button--flex">
             See Projects
             <svg
               className="button__icon"

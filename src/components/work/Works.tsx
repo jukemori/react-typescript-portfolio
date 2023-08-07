@@ -1,6 +1,7 @@
 import { projectsData, projectsNav } from "./Data";
 import { useEffect, useState } from "react";
 import WorkItems from "./WorkItems";
+import { Slide } from "react-awesome-reveal";
 
 interface Project {
   id: number;
@@ -61,8 +62,14 @@ function Works() {
       </div>
 
       <div className="work__container container grid">
-        {projects.map((item) => {
-          return <WorkItems item={item} key={item.id} />;
+        {projects.map((item, index) => {
+          const slideDirection = index % 2 === 0 ? "left" : "right";
+
+          return (
+            <Slide direction={slideDirection}>
+              <WorkItems item={item} key={item.id} />
+            </Slide>
+          );
         })}
       </div>
     </div>

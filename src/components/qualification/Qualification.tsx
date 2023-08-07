@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./qualification.css";
+import { Slide } from "react-awesome-reveal";
 
 function Qualification() {
   const [toggleState, setToggleState] = useState(1);
@@ -48,15 +49,17 @@ function Qualification() {
             }
           >
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Web Delopment</h3>
-                <span className="qualification__subtitle">
-                  Le Wagon - Tokyo
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2023 - 2023
+              <Slide direction="left">
+                <div>
+                  <h3 className="qualification__title">Web Delopment</h3>
+                  <span className="qualification__subtitle">
+                    Le Wagon - Tokyo
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2023 - 2023
+                  </div>
                 </div>
-              </div>
+              </Slide>
 
               <div>
                 <span className="qualification__rounder"></span>
@@ -71,27 +74,31 @@ function Qualification() {
                 <span className="qualification__rounder"> </span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
-                <h3 className="qualification__title">Sports Management</h3>
-                <span className="qualification__subtitle">
-                  SUNY Canton - NY, USA
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2018 - 2019
+              <Slide direction="right">
+                <div>
+                  <h3 className="qualification__title">Sports Management</h3>
+                  <span className="qualification__subtitle">
+                    SUNY Canton - NY, USA
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2018 - 2019
+                  </div>
                 </div>
-              </div>
+              </Slide>
             </div>
 
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Liberal Arts</h3>
-                <span className="qualification__subtitle">
-                  Northwest college - WY, USA
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2016 - 2017
+              <Slide direction="left">
+                <div>
+                  <h3 className="qualification__title">Liberal Arts</h3>
+                  <span className="qualification__subtitle">
+                    Northwest college - WY, USA
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2016 - 2017
+                  </div>
                 </div>
-              </div>
+              </Slide>
 
               <div>
                 <span className="qualification__rounder"></span>
@@ -106,15 +113,17 @@ function Qualification() {
                 <span className="qualification__rounder"> </span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
-                <h3 className="qualification__title">Liberal Arts</h3>
-                <span className="qualification__subtitle">
-                  De Anza College - CA, USA
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2015 - 2016
+              <Slide direction="right">
+                <div>
+                  <h3 className="qualification__title">Liberal Arts</h3>
+                  <span className="qualification__subtitle">
+                    De Anza College - CA, USA
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2015 - 2016
+                  </div>
                 </div>
-              </div>
+              </Slide>
             </div>
           </div>
 
@@ -126,15 +135,19 @@ function Qualification() {
             }
           >
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Fullstack Development</h3>
-                <span className="qualification__subtitle">
-                  Le Wagon - Tokyo
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2023 - 2023
+              <Slide direction="left">
+                <div>
+                  <h3 className="qualification__title">
+                    Fullstack Development
+                  </h3>
+                  <span className="qualification__subtitle">
+                    Le Wagon - Tokyo
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2023 - 2023
+                  </div>
                 </div>
-              </div>
+              </Slide>
 
               <div>
                 <span className="qualification__rounder"></span>
@@ -149,27 +162,33 @@ function Qualification() {
                 <span className="qualification__rounder"> </span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
-                <h3 className="qualification__title">
-                  Sales Planning Executive
-                </h3>
-                <span className="qualification__subtitle">Casio - Mexico</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2022 - 2022
+              <Slide direction="right">
+                <div>
+                  <h3 className="qualification__title">
+                    Sales Planning Executive
+                  </h3>
+                  <span className="qualification__subtitle">
+                    Casio - Mexico
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2022 - 2022
+                  </div>
                 </div>
-              </div>
+              </Slide>
             </div>
 
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Assistant Manager</h3>
-                <span className="qualification__subtitle">
-                  Vantec Logistics - Mexico
-                </span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2020 - 2022
+              <Slide direction="left">
+                <div>
+                  <h3 className="qualification__title">Assistant Manager</h3>
+                  <span className="qualification__subtitle">
+                    Vantec Logistics - Mexico
+                  </span>
+                  <div className="qualification__calendar">
+                    <i className="uil uil-calendar-alt"></i> 2020 - 2022
+                  </div>
                 </div>
-              </div>
+              </Slide>
 
               <div>
                 <span className="qualification__rounder"></span>
