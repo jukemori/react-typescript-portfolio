@@ -41,6 +41,7 @@
 .skills__button:hover .skills__button-icon {
   transform: translateX(00.25rem);
 }
+
 .skills__modal {
   position: fixed;
   top: 0;

@@ -94,12 +94,105 @@
 
 .work__button:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 /* active work */
 
 .active-work {
   background-color: var(--orange-color);
   color: var(--container-color);
+}
+
+.work__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.work__modal-content {
+  width: 500px;
+  position: relative;
+  background-color: var(--container-color);
+  padding: 4.5rem 2.5rem 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.work__modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.work__modal-img {
+  margin-bottom: var(--mb-1);
+}
+
+.work__modal-title,
+.work__modal-description {
+  text-align: center;
+}
+
+.work__modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1);
+}
+
+.work__modal-description {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+
+.work__modal-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  margin-bottom: var(--mb-1);
+}
+
+.work__modal-icon {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.work__modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__modal-button {
+  color: var(--container-color);
+  background-color: var(--orange-color);
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  border-radius: 0.5rem;
+}
+
+.work__modal-button:hover {
+  background-color: var(--orange-color-light);
+}
+
+/* Active Modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 
@@ -133,7 +226,13 @@
   .work__container {
     grid-template-columns: 1fr;
   }
+  .work__modal-content {
+    padding: 4.5rem 1.5rem 2.5rem;
+  }
 
+  .work__modal-description {
+    padding: 0;
+  }
 }
 
 /* For small devices  */
