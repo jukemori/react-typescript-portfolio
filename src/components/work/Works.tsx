@@ -62,13 +62,13 @@ function Works() {
       </div>
 
       <div className="work__container container grid">
-        {projects.map((item, index) => {
-          const slideDirection = index % 2 === 0 ? "left" : "right";
+        {projects.map((item) => {
+          // const slideDirection = index % 2 === 0 ? "left" : "right";
 
           return (
-            <Slide direction={slideDirection}>
-              <WorkItems item={item} key={item.id} />
-            </Slide>
+            // <Slide direction={slideDirection}>
+            <WorkItems item={item} key={item.id} />
+            // </Slide>
           );
         })}
       </div>
