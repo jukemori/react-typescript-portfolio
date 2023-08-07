@@ -13,18 +13,37 @@
 .testimonial__img {
   width: 60px;
   border-radius: 3rem;
-  margin-bottom: var(--mb-1);
-}
-
-.testimonial__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-25);
 }
 
-.testimonial__description {
-  font-size: var(--smaller-font-size);
+
+.testimonial__title {
+  margin-bottom: var(--mb-3);
 }
+
+.testimonial__box  {
+  display: flex;
+}
+
+.testimonial__description {
+  padding: 0 0.5rem;
+}
+
+.testimonial__icon {
+  color: var(--title-color);
+}
+
+.testimonial__name {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.testimonial__subtitle {
+  font-size: var(--smaller-font-size);
+
+}
+
 
 /* Swiper Class */
 .swiper-pagination-bullet {
