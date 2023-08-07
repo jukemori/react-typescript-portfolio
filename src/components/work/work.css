@@ -107,16 +107,12 @@
 /* For large devices  */
 @media screen and (max-width: 992px) {
  .work__container {
+    grid-template-columns: repeat(2, 350px);
     gap: 1.25rem;
  }
 
  .work__card {
-    height: auto;
- }
-
-
- .work__img {
-    margin-bottom: 0.75rem;
+    height: 200px;
  }
 
  .work__title {
@@ -128,15 +124,16 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .work__card {
+    height: auto;
+ }
+
 }
 @media screen and (max-width: 576px) {
   .work__container {
     grid-template-columns: 1fr;
   }
 
-  .work__img {
-    width: 100%;
-  }
 }
 
 /* For small devices  */
