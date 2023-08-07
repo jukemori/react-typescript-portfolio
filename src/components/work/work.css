@@ -218,7 +218,7 @@
   }
 
   .work__card {
-    height: auto;
+    height: 180px;
  }
 
 }
@@ -233,10 +233,14 @@
   .work__modal-description {
     padding: 0;
   }
+
+  .work__card {
+    height: 260px;
+ }
 }
 
 /* For small devices  */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 390px) {
   .work__item {
     font-size: var(--small-font-size);
   }
@@ -244,4 +248,8 @@
   .work__filters {
     column-gap: 0.25rem;
   }
+
+  .work__card {
+    height: 200px;
+ }
 }
