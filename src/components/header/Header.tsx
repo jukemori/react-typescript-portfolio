@@ -72,29 +72,29 @@ function Header() {
 
             <li className="nav__item">
               <a
-                href="#services"
-                onClick={() => setActiveNav("#services")}
+                href="#background"
+                onClick={() => setActiveNav("#background")}
                 className={
                   activeNav === "#services"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i> Services
+                <i className="uil uil-award-alt nav__icon"></i> Background
               </a>
             </li>
 
             <li className="nav__item">
               <a
-                href="#portfolio"
-                onClick={() => setActiveNav("#portfolio")}
+                href="#projects"
+                onClick={() => setActiveNav("#projects")}
                 className={
                   activeNav === "#portfolio"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
+                <i className="uil uil-scenery nav__icon"></i> Projects
               </a>
             </li>
 
