@@ -1,5 +1,6 @@
 import "./testimonials.css";
 import { Data } from "./Data";
+import Avatar from "../../assets/xzaiver.jpg";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,7 +16,7 @@ import { Pagination } from "swiper/modules";
 function Testimonials() {
   return (
     <section className="testimonial container section">
-      <h2 className="section__title">My clients say</h2>
+      <h2 className="section__title">Testimonial</h2>
       <span className="section__subtitle">Testimonial</span>
 
       <Swiper
@@ -48,6 +49,14 @@ function Testimonials() {
           );
         })}
       </Swiper>
+
+      <div className="testimonial__container">
+        <div className="testimonial__card">
+          <img src={Avatar} alt="" className="testimonal__img" />
+          <h3 className="testimonial__name">X'Zaiver Wolfinbarger</h3>
+          <p className="testimonial__description">He's the goat</p>
+        </div>
+      </div>
     </section>
   );
 }
