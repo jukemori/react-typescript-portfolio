@@ -1,7 +1,6 @@
 import { projectsData, projectsNav } from "./Data";
 import { useEffect, useState } from "react";
 import WorkItems from "./WorkItems";
-import { Slide } from "react-awesome-reveal";
 
 interface Project {
   id: number;
