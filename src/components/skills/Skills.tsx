@@ -1,6 +1,5 @@
 import "./skills.css";
 import { useState } from "react";
-import { Rotate } from "react-awesome-reveal";
 
 function Skills() {
   const [toggleState, setToggleState] = useState(0);
@@ -15,21 +14,20 @@ function Skills() {
       <span className="section__subtitle">What I offer</span>
 
       <div className="skills__container container grid">
-        <Rotate>
-          <div className="skills__content">
-            <div>
-              <i className="uil uil-web-grid skills__icon"></i>
-              <h3 className="skills__title">
-                Frontend <br /> Development
-              </h3>
-            </div>
-
-            <span className="skills__button" onClick={() => toggleTab(1)}>
-              View More
-              <i className="uil uil-arrow-right skills__button-icon"></i>
-            </span>
+        <div className="skills__content">
+          <div>
+            <i className="uil uil-web-grid skills__icon"></i>
+            <h3 className="skills__title">
+              Frontend <br /> Development
+            </h3>
           </div>
-        </Rotate>
+
+          <span className="skills__button" onClick={() => toggleTab(1)}>
+            View More
+            <i className="uil uil-arrow-right skills__button-icon"></i>
+          </span>
+        </div>
+
         <div
           className={
             toggleState === 1 ? "skills__modal active-modal" : "skills__modal"
@@ -76,21 +74,19 @@ function Skills() {
           </div>
         </div>
 
-        <Rotate>
-          <div className="skills__content">
-            <div>
-              <i className="uil uil-arrow skills__icon"></i>
-              <h3 className="skills__title">
-                Backend <br /> Development
-              </h3>
-            </div>
-
-            <span onClick={() => toggleTab(2)} className="skills__button">
-              View More
-              <i className="uil uil-arrow-right skills__button-icon"></i>
-            </span>
+        <div className="skills__content">
+          <div>
+            <i className="uil uil-arrow skills__icon"></i>
+            <h3 className="skills__title">
+              Backend <br /> Development
+            </h3>
           </div>
-        </Rotate>
+
+          <span onClick={() => toggleTab(2)} className="skills__button">
+            View More
+            <i className="uil uil-arrow-right skills__button-icon"></i>
+          </span>
+        </div>
 
         <div
           className={
@@ -137,22 +133,22 @@ function Skills() {
             </ul>
           </div>
         </div>
-        <Rotate>
-          <div className="skills__content">
-            <div>
-              <i className="uil uil-english-to-chinese skills__icon"></i>
-              <h3 className="skills__title">
-                <br />
-                Trilingual
-              </h3>
-            </div>
 
-            <span onClick={() => toggleTab(3)} className="skills__button">
-              View More
-              <i className="uil uil-arrow-right skills__button-icon"></i>
-            </span>
+        <div className="skills__content">
+          <div>
+            <i className="uil uil-english-to-chinese skills__icon"></i>
+            <h3 className="skills__title">
+              <br />
+              Trilingual
+            </h3>
           </div>
-        </Rotate>
+
+          <span onClick={() => toggleTab(3)} className="skills__button">
+            View More
+            <i className="uil uil-arrow-right skills__button-icon"></i>
+          </span>
+        </div>
+
         <div
           className={
             toggleState === 3 ? "skills__modal active-modal" : "skills__modal"

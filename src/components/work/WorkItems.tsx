@@ -15,16 +15,17 @@ interface WorkItem {
     tags: string[];
     url?: string;
   };
+  index: number;
 }
 
-function WorkItems({ item }: WorkItem) {
+function WorkItems({ item, index }: WorkItem) {
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (id: number) => {
     setToggleState(id);
   };
 
-  const slideDirection = item.id % 2 === 0 ? "right" : "left";
+  const slideDirection = index % 2 === 0 ? "left" : "right";
 
   return (
     <>
