@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 
 function Header() {
@@ -24,7 +25,6 @@ function Header() {
 
   // Toggle Menu
   const [Toggle, showMenu] = useState(false);
-  const [activeNav, setActiveNav] = useState("#home");
 
   return (
     <header className="header">
@@ -33,83 +33,36 @@ function Header() {
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list">
             <li className="nav__item">
-              <a
-                href="#home"
-                onClick={() => setActiveNav("#home")}
-                className={
-                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-estate nav__icon"></i> Home
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#about"
-                onClick={() => setActiveNav("#about")}
-                className={
-                  activeNav === "#about" ? "nav__link active-link" : "nav__link"
-                }
-              >
-                <i className="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-
-            <li className="nav__item">
-              <a
-                href="#skills"
-                onClick={() => setActiveNav("#skills")}
-                className={
-                  activeNav === "#skills"
-                    ? "nav__link active-link"
-                    : "nav__link"
-                }
-              >
-                <i className="uil uil-file-alt nav__icon"></i> Skills
-              </a>
-            </li>
-
-            <li className="nav__item">
-              <a
-                href="#background"
-                onClick={() => setActiveNav("#background")}
-                className={
-                  activeNav === "#services"
-                    ? "nav__link active-link"
-                    : "nav__link"
-                }
-              >
-                <i className="uil uil-award-alt nav__icon"></i> Background
-              </a>
-            </li>
-
-            <li className="nav__item">
-              <a
-                href="#projects"
-                onClick={() => setActiveNav("#projects")}
-                className={
-                  activeNav === "#portfolio"
-                    ? "nav__link active-link"
-                    : "nav__link"
+              <NavLink
+                to="/projects"
+                className={({ isActive }) =>
+                  isActive ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-scenery nav__icon"></i> Projects
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav__item">
-              <a
-                href="#contact"
-                onClick={() => setActiveNav("#contact")}
-                className={
-                  activeNav === "#contact"
-                    ? "nav__link active-link"
-                    : "nav__link"
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-message nav__icon"></i> Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
 

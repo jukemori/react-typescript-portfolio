@@ -2,7 +2,7 @@ import { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
-const Contact = () => {
+export const ContactData = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -149,5 +149,3 @@ const Contact = () => {
     </section>
   );
 };
-
-export default Contact;
