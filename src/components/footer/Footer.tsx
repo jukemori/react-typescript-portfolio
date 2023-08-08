@@ -1,6 +1,14 @@
+import { NavLink } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
+  function scrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <footer className="footer">
       <div className="footer__container container">
@@ -8,21 +16,33 @@ const Footer = () => {
 
         <ul className="footer__list">
           <li>
-            <a href="#about" className="footer__link">
+            <NavLink
+              to="/"
+              className="footer__link"
+              onClick={() => scrollToSection("about")}
+            >
               About
-            </a>
+            </NavLink>
           </li>
 
           <li>
-            <a href="#qualification" className="footer__link">
+            <NavLink
+              to="/"
+              className="footer__link"
+              onClick={() => scrollToSection("skills")}
+            >
+              Skills
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/"
+              className="footer__link"
+              onClick={() => scrollToSection("background")}
+            >
               Background
-            </a>
-          </li>
-
-          <li>
-            <a href="#portfolio" className="footer__link">
-              Projects
-            </a>
+            </NavLink>
           </li>
         </ul>
 

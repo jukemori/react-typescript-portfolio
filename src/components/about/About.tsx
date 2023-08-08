@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./about.css";
 import AboutImg from "../../assets/about.png";
 import Info from "./Info";
@@ -20,7 +21,7 @@ const About = () => {
             in sports such as football and boxing
           </p>
 
-          <a href="#projects" className="button button--flex">
+          <NavLink to="/projects" className="button button--flex">
             See Projects
             <svg
               className="button__icon"
@@ -47,7 +48,7 @@ const About = () => {
                 fill="var(--container-color)"
               ></path>
             </svg>
-          </a>
+          </NavLink>
         </div>
       </div>
     </section>

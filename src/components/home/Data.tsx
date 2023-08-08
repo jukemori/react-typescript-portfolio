@@ -1,4 +1,5 @@
 import { Fade } from "react-awesome-reveal";
+import { NavLink } from "react-router-dom";
 
 const Data = () => {
   return (
@@ -14,7 +15,7 @@ const Data = () => {
         I'm a creative developer based in Tokyo, and I'm very passionate and
         dedicated to my work.
       </p>
-      <a href="#contact" className="button button--flex">
+      <NavLink to="/contact" className="button button--flex">
         Say Hello
         <svg
           className="button__icon"
@@ -33,7 +34,7 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
+      </NavLink>
     </div>
   );
 };
