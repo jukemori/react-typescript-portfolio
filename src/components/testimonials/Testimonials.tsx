@@ -1,7 +1,5 @@
 import "./testimonials.css";
 
-import Avatar from "../../assets/xzaiver.jpg";
-
 function Testimonials() {
   return (
     <section className="testimonial container section">
@@ -14,7 +12,11 @@ function Testimonials() {
             <i className="bx bxs-quote-left"></i> He's the goat
           </h3>
           <div className="testimonial__box">
-            <img src={Avatar} alt="" className="testimonial__img" />
+            <img
+              src="https://res.cloudinary.com/dg1bjmdp8/image/upload/v1691982319/Portfolio/Public/xzaivar_nhfek8.jpg"
+              alt=""
+              className="testimonial__img"
+            />
             <div className="testimonial__description">
               <div>
                 <i className="bx bxs-star testimonial__icon"></i>

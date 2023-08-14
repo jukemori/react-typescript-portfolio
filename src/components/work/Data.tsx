@@ -1,16 +1,3 @@
-import Main1 from "../../assets/projects/wolfminute/main.png";
-import Main2 from "../../assets/projects/friendzone/main.png";
-import Main3 from "../../assets/projects/retailing/main.png";
-import Main4 from "../../assets/projects/watchlist/main.png";
-import Main5 from "../../assets/projects/product-cards/main.png";
-import Main6 from "../../assets/projects/word-game/main.png";
-import Sub1 from "../../assets/projects/wolfminute/sub.png";
-import Sub2 from "../../assets/projects/friendzone/sub.png";
-import Sub3 from "../../assets/projects/retailing/main.png";
-import Sub4 from "../../assets/projects/watchlist/sub.png";
-import Sub5 from "../../assets/projects/product-cards/main.png";
-import Sub6 from "../../assets/projects/word-game/sub.png";
-
 export const projectsData = [
   {
     id: 1,
@@ -36,7 +23,10 @@ export const projectsData = [
   {
     id: 2,
     title: "FriendZone",
-    image: { main: Main2, sub: Sub2 },
+    image: {
+      main: "v1691980429/Portfolio/FriendZone/main-3_huamqy.jpg",
+      sub: "v1691980436/Portfolio/FriendZone/sub-3_alei1l.jpg",
+    },
     category: "rails",
     description:
       "An innovative app that allows users to book friend for a specified duration, providing personalized experiences and connections. Whether for social events or casual outings, it offers a safe and convenient platform to select and hire a friend-like companion.",
@@ -54,7 +44,10 @@ export const projectsData = [
   {
     id: 3,
     title: "Retail App",
-    image: { main: Main3, sub: Sub3 },
+    image: {
+      main: "v1691980521/Portfolio/RetailApp/main_aeofwp.jpg",
+      sub: "v1691980521/Portfolio/RetailApp/main_aeofwp.jpg",
+    },
     category: "react",
     description: "Mockup dynamic retail app made by react and typescript",
     source: "https://github.com/jukemori/react-retailing-app",
@@ -63,7 +56,10 @@ export const projectsData = [
   {
     id: 4,
     title: "Movie Watchlist",
-    image: { main: Main4, sub: Sub4 },
+    image: {
+      main: "v1691980458/Portfolio/WatchList/main-4_lkaeqo.jpg",
+      sub: "v1691980464/Portfolio/WatchList/sub_o0ffhu.jpg",
+    },
     category: "rails",
     description:
       "An entertainment app which allows user to get infomation about the movies and create their own watchlist.",
@@ -82,7 +78,10 @@ export const projectsData = [
   {
     id: 5,
     title: "Product Cards",
-    image: { main: Main5, sub: Sub5 },
+    image: {
+      main: "v1691980528/Portfolio/ProductCards/main-1_kepxgr.jpg",
+      sub: "v1691980528/Portfolio/ProductCards/main-1_kepxgr.jpg",
+    },
     category: "react",
     description:
       "A dynamic product page that lists various products and allows users to vote for their favorite products.",
@@ -92,7 +91,10 @@ export const projectsData = [
   {
     id: 6,
     title: "Longest word game",
-    image: { main: Main6, sub: Sub6 },
+    image: {
+      main: "v1691980488/Portfolio/WordGame/main-2_bvfufl.jpg",
+      sub: "v1691980492/Portfolio/WordGame/sub-1_bhlmpm.jpg",
+    },
     category: "rails",
     description:
       "Longest Word Game is a challenging and educational word game where players are tasked with finding valid English words from a set of given letters. The game tests players' vocabulary skills and ability to form words using the provided letters.",
