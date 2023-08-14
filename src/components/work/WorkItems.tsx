@@ -43,6 +43,7 @@ function WorkItems({ item, index }: WorkItem) {
             cldImg={cld.image(item.image.main)}
             alt=""
             className="work__img"
+            loading="lazy"
           />
           <div className="work__card--hover">
             <h3 className="work__title">{item.title}</h3>
@@ -67,6 +68,7 @@ function WorkItems({ item, index }: WorkItem) {
             cldImg={cld.image(item.image.sub)}
             alt=""
             className="work__modal-img"
+            loading="lazy"
           />
 
           <h3 className="work__modal-title">{item.title}</h3>
