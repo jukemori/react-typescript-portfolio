@@ -15,7 +15,10 @@ export const projectsData = [
   {
     id: 1,
     title: "Wolf Minute",
-    image: { main: Main1, sub: Sub1 },
+    image: {
+      main: "v1691980407/Portfolio/WolfMinute/main-5_apknbu.jpg",
+      sub: "v1691980418/Portfolio/WolfMinute/sub-2_ztciqd.jpg",
+    },
     category: "rails",
     description:
       "A meeting scheduler web app that analyzes optimal meeting times based on team members' availability. It also records the meeting and gives you a summary and key points of the meeting.",
