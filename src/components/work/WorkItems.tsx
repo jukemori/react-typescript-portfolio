@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
+import { AdvancedImage } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
 
 interface WorkItem {
   item: {
@@ -27,11 +29,21 @@ function WorkItems({ item, index }: WorkItem) {
 
   const slideDirection = index % 2 === 0 ? "left" : "right";
 
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "dg1bjmdp8",
+    },
+  });
+
   return (
     <>
       <Slide direction={slideDirection}>
         <div className="work__card" key={item.id}>
-          <img src={item.image.main} alt="" className="work__img" />
+          <AdvancedImage
+            cldImg={cld.image(item.image.main)}
+            alt=""
+            className="work__img"
+          />
           <div className="work__card--hover">
             <h3 className="work__title">{item.title}</h3>
             <span className="work__button" onClick={() => toggleTab(item.id)}>
@@ -51,7 +63,11 @@ function WorkItems({ item, index }: WorkItem) {
             onClick={() => toggleTab(0)}
             className="uil uil-times work__modal-close"
           ></i>
-          <img src={item.image.sub} alt="" className="work__modal-img" />
+          <AdvancedImage
+            cldImg={cld.image(item.image.sub)}
+            alt=""
+            className="work__modal-img"
+          />
 
           <h3 className="work__modal-title">{item.title}</h3>
           <p className="work__modal-description">{item.description}</p>
