@@ -7,7 +7,9 @@ function Header() {
   useEffect(() => {
     const header = document.querySelector(".header");
 
-    if (header) {
+    const isScreenWidthAboveThreshold = window.innerWidth > 768;
+
+    if (header && isScreenWidthAboveThreshold) {
       const handleScroll = () => {
         if (window.scrollY >= 80) {
           header.classList.add("scroll-header");
