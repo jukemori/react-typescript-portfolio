@@ -77,6 +77,19 @@ export const projectsData = [
   },
   {
     id: 5,
+    title: "Threads Clone",
+    image: {
+      main: "v1691987466/Portfolio/Threads/sub_mfxtfc.jpg",
+      sub: "v1691987473/Portfolio/Threads/main_canbds.jpg",
+    },
+    category: "react",
+    description:
+      "This is a React app written in TypeScript that allows users to interact with threads and replies. Users can view and create threads, as well as post replies.",
+    source: "https://github.com/jukemori/react-product-cards",
+    tags: ["devicon-typescript-plain", "devicon-react-original"],
+  },
+  {
+    id: 6,
     title: "Product Cards",
     image: {
       main: "v1691980528/Portfolio/ProductCards/main-1_kepxgr.jpg",
@@ -85,11 +98,11 @@ export const projectsData = [
     category: "react",
     description:
       "A dynamic product page that lists various products and allows users to vote for their favorite products.",
-    source: "https://github.com/jukemori/react-product-cards",
-    tags: ["devicon-typescript-plain", "devicon-react-original"],
+    source: "https://github.com/jukemori/react-threads-clone",
+    tags: ["devicon-javascript-plain", "devicon-react-original"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Longest word game",
     image: {
       main: "v1691980488/Portfolio/WordGame/main-2_bvfufl.jpg",
