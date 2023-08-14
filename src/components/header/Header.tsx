@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 
@@ -23,14 +23,11 @@ function Header() {
     }
   }, []);
 
-  // Toggle Menu
-  const [Toggle, showMenu] = useState(false);
-
   return (
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo"></NavLink>
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div className="nav__menu">
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink
@@ -65,14 +62,6 @@ function Header() {
               </NavLink>
             </li>
           </ul>
-
-          <i
-            className="uil uil-times nav__close"
-            onClick={() => showMenu(!Toggle)}
-          ></i>
-        </div>
-        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i className="uil uil-apps"></i>
         </div>
       </nav>
     </header>

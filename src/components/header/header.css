@@ -75,13 +75,12 @@
 
   .nav__menu {
     position: fixed;
-    bottom: -100% ;
+    bottom: 0 ;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
+    padding: 1.5rem 1.5rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-    border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
 
@@ -118,25 +117,25 @@
     cursor: pointer;
   }
 
-  .nav__icon,
-  .nav__close,
-  .nav__toggle {
+  .nav__icon {
     display: block;
 
   }
 
   .nav__logo {
-    width: 20px;
-    height: 20px;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav__menu {
+    padding: 1rem 0.25rem;
   }
 }
 
 /* For small devices  */
 @media screen and (max-width: 350px) {
-  .nav__menu {
-    padding: 2rem 0.25rem 4rem;
-  }
-
   .nav__list {
     column-gap: 0;
   }
