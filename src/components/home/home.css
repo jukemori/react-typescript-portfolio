@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  height: 100svh;
+  height: 90svh;
   align-items: center;
 }
 
@@ -10,7 +10,6 @@
 
 .home__content {
   grid-template-columns: 116px repeat(2,1fr);
-  /* padding-top: 5.5rem; */
   column-gap: 2rem;
   align-items: center;
 }
@@ -90,13 +89,7 @@
   }
 }
 
-.home__scroll {
-  margin-left: 9.25rem;
-}
 
-.wheel {
-  animation: scroll 2s ease infinite;
-}
 
 @keyframes scroll {
   0% {
@@ -108,11 +101,12 @@
   }
 }
 
-.home__scroll-name {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  margin-right: var(--mb-0-25);
-  margin-left: 2px;
+
+
+.scrolldown__icon {
+  font-size: 1.5rem;
+  color: var(--container-color);
+  margin-left: var(--mb-0-5);
 }
 
 .home__scroll-arrow {
@@ -154,9 +148,6 @@
     box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
   }
 
-  .home__scroll {
-    margin-left: 7.5rem;
-  }
 }
 
 /* For medium devices  */
@@ -180,9 +171,6 @@
     height: 200px;
   }
 
-  .home__scroll {
-    display: none;
-  }
 }
 
 
