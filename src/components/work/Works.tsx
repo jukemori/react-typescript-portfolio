@@ -70,5 +70,3 @@ function Works() {
 }
 
 export default Works;
-
-<span className="active-work work__item">web</span>;
