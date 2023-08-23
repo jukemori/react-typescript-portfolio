@@ -61,8 +61,8 @@ function Works() {
       </div>
 
       <div className="work__container container grid">
-        {projects.map((item, index) => {
-          return <WorkItems item={item} key={item.id} index={index} />;
+        {projects.map((item) => {
+          return <WorkItems item={item} key={item.id} />;
         })}
       </div>
     </div>

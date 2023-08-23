@@ -99,10 +99,6 @@
 
 }
 @media screen and (max-width: 576px) {
-  .article__container {
-    grid-template-columns: 1fr;
-  }
-
   .article__img {
     height: 180px;
   }
@@ -113,5 +109,11 @@
 
   .article__header {
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .article__container {
+    grid-template-columns: 1fr;
   }
 }
