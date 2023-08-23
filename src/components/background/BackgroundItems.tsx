@@ -10,7 +10,7 @@ function BackgroundItems({ item }: BackgroundItem) {
     <>
       {side === "left" && (
         <div className="background__data" key={item.id}>
-          <Slide direction="left">
+          <Slide triggerOnce direction="left">
             <div>
               <h3 className="background__title">{item.title}</h3>
               <span className="background__subtitle">{item.subtitle}</span>
@@ -35,7 +35,7 @@ function BackgroundItems({ item }: BackgroundItem) {
             <span className="background__rounder"> </span>
             <span className="background__line"></span>
           </div>
-          <Slide direction="right">
+          <Slide triggerOnce direction="right">
             <div>
               <h3 className="background__title">{item.title}</h3>
               <span className="background__subtitle">{item.subtitle}</span>
