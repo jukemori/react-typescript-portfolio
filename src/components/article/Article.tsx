@@ -3,7 +3,7 @@ import Articles from "./Articles";
 
 function Article() {
   return (
-    <section className="Article section" id="articles">
+    <section className="article section" id="articles">
       <h2 className="section__title">Blogs</h2>
       <span className="section__subtitle">I write about tech</span>
 

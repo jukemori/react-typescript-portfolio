@@ -5,7 +5,6 @@ interface ArticleItemProps {
     pubDate: string;
     thumbnail: string;
     description: string;
-    tags: string[];
   };
   index: number;
 }
@@ -53,11 +52,17 @@ function ArticleItems({ article, index }: ArticleItemProps) {
 
   return (
     <div className="article__card" key={index}>
-      <img src={article.thumbnail} alt={article.title} />
+      <img
+        className="article__img"
+        src={article.thumbnail}
+        alt={article.title}
+      />
       <h3 className="article__title">{article.title}</h3>
       <p className="article__description">{content}</p>
       <p className="article__date">{formattedDate}</p>
-      <a href={article.link} className="article__button"></a>
+      <a href={article.link} target="_blank" className="article__button">
+        Read more <i className="bx bx-right-arrow-alt work__button-icon"></i>
+      </a>
     </div>
   );
 }

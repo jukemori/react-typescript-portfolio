@@ -16,7 +16,7 @@ const Articles = () => {
   return (
     <div className="article__container container grid">
       {articles.map((article, index) => {
-        return <ArticleItems article={article} index={index} />;
+        return <ArticleItems key={index} article={article} index={0} />;
       })}
     </div>
   );

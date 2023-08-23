@@ -75,9 +75,9 @@ function WorkItems({ item, index }: WorkItem) {
           <p className="work__modal-description">{item.description}</p>
 
           <ul className="work__modal-skills">
-            {item.tags.map((tag) => {
+            {item.tags.map((tag, index) => {
               return (
-                <li className="work__modal-skill">
+                <li key={index} className="work__modal-skill">
                   <i className={`${tag} work__modal-icon`}></i>
                 </li>
               );
