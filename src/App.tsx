@@ -1,5 +1,6 @@
 import "./index.css";
-import { Routes, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
+import SlideRoutes from "react-slide-routes";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
@@ -13,12 +14,12 @@ function App() {
     <>
       <Header />
 
-      <Routes>
+      <SlideRoutes>
         <Route path="/" element={<Main />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
+      </SlideRoutes>
 
       <Footer />
       <ScrollUp />
