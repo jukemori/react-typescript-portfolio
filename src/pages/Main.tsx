@@ -3,7 +3,6 @@ import About from "../components/about/About";
 import Skills from "../components/skills/Skills";
 import Background from "../components/background/Background";
 import Testimonials from "../components/testimonials/Testimonials";
-import Article from "../components/article/Article";
 
 function Main() {
   return (
@@ -13,7 +12,6 @@ function Main() {
       <Skills />
       <Background />
       <Testimonials />
-      <Article />
     </>
   );
 }

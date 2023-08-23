@@ -6,6 +6,7 @@ import ScrollUp from "./components/scrollup/ScrollUp";
 import Main from "./pages/Main";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Blogs from "./pages/Blogs";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
