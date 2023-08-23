@@ -61,8 +61,8 @@ function Works() {
       </div>
 
       <div className="work__container container grid">
-        {projects.map((item, index) => {
-          return <WorkItems item={item} index={index} />;
+        {projects.map((item) => {
+          return <WorkItems item={item} key={item.id} />;
         })}
       </div>
     </div>
@@ -70,5 +70,3 @@ function Works() {
 }
 
 export default Works;
-
-<span className="active-work work__item">web</span>;

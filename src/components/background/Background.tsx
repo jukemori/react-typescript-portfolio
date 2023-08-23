@@ -49,7 +49,7 @@ function Background() {
             }
           >
             {Educations.map((item) => {
-              return <BackgroundItems item={item} />;
+              return <BackgroundItems key={item.id} item={item} />;
             })}
           </div>
           <div
@@ -60,7 +60,7 @@ function Background() {
             }
           >
             {Experiences.map((item) => {
-              return <BackgroundItems item={item} />;
+              return <BackgroundItems key={item.id} item={item} />;
             })}
           </div>
         </div>

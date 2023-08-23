@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Slide } from "react-awesome-reveal";
 import { AdvancedImage } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
 
@@ -17,17 +16,14 @@ interface WorkItem {
     tags: string[];
     url?: string;
   };
-  index: number;
 }
 
-function WorkItems({ item, index }: WorkItem) {
+function WorkItems({ item }: WorkItem) {
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (id: number) => {
     setToggleState(id);
   };
-
-  const slideDirection = index % 2 === 0 ? "left" : "right";
 
   const cld = new Cloudinary({
     cloud: {
@@ -37,23 +33,22 @@ function WorkItems({ item, index }: WorkItem) {
 
   return (
     <>
-      <Slide direction={slideDirection}>
-        <div className="work__card" key={item.id}>
-          <AdvancedImage
-            cldImg={cld.image(item.image.main)}
-            alt=""
-            className="work__img"
-            loading="lazy"
-          />
-          <div className="work__card--hover">
-            <h3 className="work__title">{item.title}</h3>
-            <span className="work__button" onClick={() => toggleTab(item.id)}>
-              View More{" "}
-              <i className="bx bx-right-arrow-alt work__button-icon"></i>
-            </span>
-          </div>
+      <div className="work__card" key={item.id}>
+        <AdvancedImage
+          cldImg={cld.image(item.image.main)}
+          alt=""
+          className="work__img"
+          loading="lazy"
+        />
+        <div className="work__card--hover">
+          <h3 className="work__title">{item.title}</h3>
+          <span className="work__button" onClick={() => toggleTab(item.id)}>
+            View More{" "}
+            <i className="bx bx-right-arrow-alt work__button-icon"></i>
+          </span>
         </div>
-      </Slide>
+      </div>
+
       <div
         className={
           toggleState === item.id ? "work__modal active-modal" : "work__modal"
@@ -75,9 +70,9 @@ function WorkItems({ item, index }: WorkItem) {
           <p className="work__modal-description">{item.description}</p>
 
           <ul className="work__modal-skills">
-            {item.tags.map((tag) => {
+            {item.tags.map((tag, index) => {
               return (
-                <li className="work__modal-skill">
+                <li key={index} className="work__modal-skill">
                   <i className={`${tag} work__modal-icon`}></i>
                 </li>
               );
