@@ -133,12 +133,3 @@
     column-gap: 0;
   }
 }
-
-/* For small devices  */
-@media screen and (max-width: 400px) {
-
-
-  .nav__list {
-    column-gap: 0;
-  }
-}

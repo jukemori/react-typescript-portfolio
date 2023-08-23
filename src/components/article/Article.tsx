@@ -5,7 +5,7 @@ function Article() {
   return (
     <section className="article section" id="articles">
       <h2 className="section__title">Blogs</h2>
-      <span className="section__subtitle">I write about tech</span>
+      <span className="section__subtitle">I write about web dev</span>
 
       <Articles />
     </section>
