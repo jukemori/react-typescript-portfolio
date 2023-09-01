@@ -86,7 +86,7 @@
 
   .nav__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
   }
 
@@ -131,5 +131,9 @@
   .nav__link {
     font-size: var(--tiny-font-size);
     column-gap: 0;
+  }
+
+  .nav__list {
+    gap: 0;
   }
 }

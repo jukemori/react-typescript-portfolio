@@ -1,4 +1,5 @@
 import { Fade } from "react-awesome-reveal";
+import { NavLink } from "react-router-dom";
 
 const Data = () => {
   return (
@@ -11,13 +12,14 @@ const Data = () => {
 
       <h3 className="home__subtitle">Fullstack Developer</h3>
       <p className="home__description">
-        I'm a creative developer based in Tokyo, and I'm very passionate and
-        dedicated to my work.
+        I'm a web developer based in Tokyo. I enjoy building fullstack
+        applications using React and Rails.
       </p>
-      <a href="#about" className="button button--flex">
-        Scroll Down
-        <i className="bx bx-down-arrow-alt scrolldown__icon"></i>
-      </a>
+
+      <NavLink to="/about" className="button button--flex">
+        About Me
+        <i className="bx bx-right-arrow-alt scrollright__icon"></i>
+      </NavLink>
     </div>
   );
 };
