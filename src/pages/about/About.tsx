@@ -47,7 +47,7 @@ const About = () => {
           </p>
 
           <p className="about__description">
-            I worked as an assistant manager at a Japanese logistics company in
+            I worked as an Assistant Manager at a Japanese logistics company in
             Mexico for nearly three years. I jumped to Casio after that, tried
             the whole Sales Planning Executive thing, realized it wasn't my
             scene, and made a quick exit. That's when I got that lightbulb
@@ -93,7 +93,7 @@ const About = () => {
         <div className="about__data">
           <h3 className="about__subtitle">Interests</h3>
           <p className="about__description">
-            When I'm not coding, you'll catch me sweating it out in sports,I've
+            When I'm not coding, you'll catch me sweating it out in sports, I've
             been all about football since I was a kid, playing my way through
             college and still kicking it in those weekend pick-up matches. Oh,
             and by the way, I'm a die-hard Manchester United fan – I also boxed
