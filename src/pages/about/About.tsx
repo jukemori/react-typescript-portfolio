@@ -67,13 +67,14 @@ const About = () => {
           <h3 className="about__subtitle">Path to coding</h3>
           <p className="about__description">
             Let me be real though – I was lost in the career maze for a while.
-            Mexico made me realize that job titles mattered, It hit me – work
-            eats up most of our lives, so I better start caring about what I'm
-            doing. I met a bunch of digital nomads in Mexico City and thought,
-            "Hey, that's the dream – coding from a beach somewhere"
+            working in a corporate environment made me realize that job titles
+            mattered. I started thinking that work eats up most of our lives, so
+            I better start caring about what I'm doing. During my time in Mexico
+            City, I met a bunch of digital nomads and thought, "Hey, that's the
+            dream – coding from a beach somewhere"
           </p>
           <p className="about__description">
-            Spoiler alert: it wasn't that simple. But back then, I was on a
+            Spoiler alert: it's not that simple. But back then, I was on a
             fantasy trip. In the beginning, programming language was like an
             alien language to me. But dang, learning them was a blast. The more
             I dug in, the more I realized coding was my thing. So, I took the
