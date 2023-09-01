@@ -59,8 +59,11 @@ function WorkItems({ item }: WorkItem) {
           title={item.title}
           description={item.description}
           imageUrl={item.image.sub} // Pass the image URL as a prop
-          onClose={() => toggleTab(0)} // Define the close action
           image={cld.image(item.image.sub)} // Pass the Cloudinary instance
+          onClose={() => toggleTab(0)} // Define the close action
+          tags={item.tags}
+          url={item.url}
+          source={item.source}
         />
       </div>
     </>
