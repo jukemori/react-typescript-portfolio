@@ -11,6 +11,7 @@ const About = () => {
           src="https://res.cloudinary.com/dg1bjmdp8/image/upload/v1693478106/Portfolio/Public/about/about-main.jpg"
           alt=""
           className="about__img"
+          loading="lazy"
         />
 
         <div className="about__data">
@@ -34,6 +35,7 @@ const About = () => {
           src="https://res.cloudinary.com/dg1bjmdp8/image/upload/v1693469897/Portfolio/Public/about/about-football.jpg"
           alt=""
           className="about__img"
+          loading="lazy"
         />
 
         <div className="about__data">
@@ -61,6 +63,7 @@ const About = () => {
           src="https://res.cloudinary.com/dg1bjmdp8/image/upload/v1693478106/Portfolio/Public/about/about-mexico.jpg"
           alt=""
           className="about__img"
+          loading="lazy"
         />
 
         <div className="about__data">
@@ -89,6 +92,7 @@ const About = () => {
           src="https://res.cloudinary.com/dg1bjmdp8/image/upload/v1693469917/Portfolio/Public/about/about-boxing.jpg"
           alt=""
           className="about__img"
+          loading="lazy"
         />
 
         <div className="about__data">

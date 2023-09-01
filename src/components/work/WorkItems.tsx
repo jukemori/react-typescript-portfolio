@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AdvancedImage } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
+import Modal from "./Modal";
 
 interface WorkItem {
   item: {
@@ -18,18 +19,18 @@ interface WorkItem {
   };
 }
 
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: "dg1bjmdp8",
+  },
+});
+
 function WorkItems({ item }: WorkItem) {
   const [toggleState, setToggleState] = useState(0);
 
   const toggleTab = (id: number) => {
     setToggleState(id);
   };
-
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "dg1bjmdp8",
-    },
-  });
 
   return (
     <>
@@ -54,45 +55,13 @@ function WorkItems({ item }: WorkItem) {
           toggleState === item.id ? "work__modal active-modal" : "work__modal"
         }
       >
-        <div className="work__modal-content">
-          <i
-            onClick={() => toggleTab(0)}
-            className="uil uil-times work__modal-close"
-          ></i>
-          <AdvancedImage
-            cldImg={cld.image(item.image.sub)}
-            alt=""
-            className="work__modal-img"
-            loading="lazy"
-          />
-
-          <h3 className="work__modal-title">{item.title}</h3>
-          <p className="work__modal-description">{item.description}</p>
-
-          <ul className="work__modal-skills">
-            {item.tags.map((tag, index) => {
-              return (
-                <li key={index} className="work__modal-skill">
-                  <i className={`${tag} work__modal-icon`}></i>
-                </li>
-              );
-            })}
-          </ul>
-          <div className="work__modal-buttons">
-            {item.url && (
-              <a href={item.url} target="_blank">
-                <button className="work__modal-button">
-                  <i className="bx bx-link-external"></i> Demo
-                </button>
-              </a>
-            )}
-            <a href={item.source} target="_blank">
-              <button className="work__modal-button">
-                <i className="bx bxl-github"></i> Source
-              </button>
-            </a>
-          </div>
-        </div>
+        <Modal
+          title={item.title}
+          description={item.description}
+          imageUrl={item.image.sub} // Pass the image URL as a prop
+          onClose={() => toggleTab(0)} // Define the close action
+          image={cld.image(item.image.sub)} // Pass the Cloudinary instance
+        />
       </div>
     </>
   );
