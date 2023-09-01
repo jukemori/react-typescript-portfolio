@@ -1,20 +1,20 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
-  function scrollToSection(sectionId: string) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  }
+  // function scrollToSection(sectionId: string) {
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }
 
   return (
     <footer className="footer">
       <div className="footer__container container">
         <h1 className="footer__title">Jun Ukemori</h1>
 
-        <ul className="footer__list">
+        {/* <ul className="footer__list">
           <li>
             <NavLink
               to="/"
@@ -44,7 +44,7 @@ const Footer = () => {
               Background
             </NavLink>
           </li>
-        </ul>
+        </ul> */}
 
         <div className="footer__social">
           <a

@@ -16,7 +16,7 @@ const Data = () => {
         applications using React and Rails.
       </p>
 
-      <NavLink to="/projects" className="button button--flex">
+      <NavLink to="/about" className="button button--flex">
         About Me
         <i className="bx bx-right-arrow-alt scrollright__icon"></i>
       </NavLink>

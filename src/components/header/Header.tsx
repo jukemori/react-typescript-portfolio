@@ -44,6 +44,17 @@ function Header() {
 
             <li className="nav__item">
               <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav__link active-link" : "nav__link"
+                }
+              >
+                <i className="uil uil-user nav__icon"></i> About
+              </NavLink>
+            </li>
+
+            <li className="nav__item">
+              <NavLink
                 to="/projects"
                 className={({ isActive }) =>
                   isActive ? "nav__link active-link" : "nav__link"

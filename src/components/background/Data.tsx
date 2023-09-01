@@ -28,9 +28,9 @@ export const Educations = [
 export const Experiences = [
   {
     id: 1,
-    title: "Fullstack Development",
-    subtitle: "Le Wagon - Tokyo",
-    calendar: "2023 - 2023",
+    title: "Frontend Developer",
+    subtitle: "Sutrix Group - Tokyo",
+    calendar: "2023 - Present",
   },
   {
     id: 2,
