@@ -56,6 +56,7 @@ function ArticleItems({ article, index }: ArticleItemProps) {
         className="article__img"
         src={article.thumbnail}
         alt={article.title}
+        loading="lazy"
       />
       <div className="article__body">
         <div className="article__header">
