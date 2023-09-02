@@ -15,7 +15,7 @@ const About = () => {
         />
 
         <div className="about__data">
-          <h3 className="about__subtitle">Introduction</h3>
+          <h3 className="about__subtitle">Background</h3>
           <p className="about__description">
             I grew up in Tokyo, binging on American movies and TV shows like it
             was my job. Obviously, that got me dreaming about exploring the good
@@ -68,7 +68,7 @@ const About = () => {
         />
 
         <div className="about__data">
-          <h3 className="about__subtitle">Path to coding</h3>
+          <h3 className="about__subtitle">Path to Coding</h3>
           <p className="about__description">
             Let me be real though – I was lost in the career maze for a while.
             working in a corporate environment made me realize that job titles
@@ -99,12 +99,14 @@ const About = () => {
         <div className="about__data">
           <h3 className="about__subtitle">Interests</h3>
           <p className="about__description">
-            When I'm not coding, you'll catch me sweating it out in sports, I've
-            been all about football since I was a kid, playing my way through
-            college and still kicking it in those weekend pick-up matches. Oh,
-            and by the way, I'm a die-hard Manchester United fan – I also boxed
-            for 3 years in Mexico and I love watching boxing matches. Other than
-            that, I also like watching Spanish TV shows and traveling.
+            When I'm not glued to my computer coding, you'll usually catch me
+            breaking a sweat on the sports field. I've been all about football
+            since I was a kid, played it all the way through college, and still
+            kick it in those weekend pick-up games. By the way, I'm a die-hard
+            Manchester United fan. Also, I did some boxing in Mexico for three
+            years, and I love watching boxing matches. And when I'm just
+            chilling, you can find me binge-watching Spanish TV shows or jetting
+            off to new places.
           </p>
         </div>
       </div>
