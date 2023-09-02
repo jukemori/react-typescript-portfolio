@@ -20,7 +20,8 @@ const About = () => {
             I grew up in Tokyo, binging on American movies and TV shows like it
             was my job. Obviously, that got me dreaming about exploring the good
             ol' USA. Fast forward to when I was 15 – I hopped on a plane to
-            Georgia, did the whole international student thing for a year.
+            Georgia, did the whole international exchange student thing for a
+            year.
           </p>
           <p className="about__description">
             After finishng high school, I went on a wild college adventure. From
@@ -49,13 +50,13 @@ const About = () => {
           </p>
 
           <p className="about__description">
-            I worked as an Assistant Manager at a Japanese logistics company in
-            Mexico for nearly three years. I jumped to Casio after that, tried
-            the whole Sales Planning Executive thing, realized it wasn't my
-            scene, and made a quick exit. That's when I got that lightbulb
-            moment – tech was where I belonged. Packed my bags, came back to
-            Japan in 2023, completed a web development bootcamp at Le Wagon, and
-            now I'm working as a frontend developer in Tokyo.
+            Eventually, I got a job in a logistics company in Mexico, and worked
+            as an Assistant Manager for nearly three years. I jumped to Casio
+            after that, tried the whole Sales Planning Executive thing, realized
+            it wasn't my scene, and made a quick exit. That's when I got that
+            lightbulb moment – tech was where I belonged. Packed my bags, came
+            back to Japan in 2023, completed a web development bootcamp at Le
+            Wagon, and now I'm working as a frontend developer in Tokyo.
           </p>
         </div>
 
@@ -77,14 +78,14 @@ const About = () => {
             dream – coding from a beach somewhere"
           </p>
           <p className="about__description">
-            Spoiler alert: it's not that simple. But back then, I was on a
-            fantasy trip. In the beginning, programming language was like an
-            alien language to me. But dang, learning them was a blast. The more
+            Spoiler alert: it's not as straightforward as it seems. But back
+            then, I was on a fantasy trip. Initially, programming seemed as
+            alien languages to me. But dang, learning them was a blast. The more
             I dug in, the more I realized coding was my thing. So, I took the
-            plunge – joined a web development bootcamp, got to know a lot of
-            tech fanatics, and had a total mindset makeover. Now, I'm all about
-            coding, soaking up new tech, and blazing trails in the wild world of
-            development.
+            plunge – joined a web development bootcamp and started going to tech
+            meetups, got to know a lot of tech fanatics, and had a total mindset
+            makeover. Now, I'm all about coding, soaking up new tech, and
+            blazing trails in the wild world of development.
           </p>
         </div>
 
