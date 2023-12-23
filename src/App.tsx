@@ -7,7 +7,7 @@ import ScrollUp from "./components/scrollup/ScrollUp";
 import Main from "./pages/Main";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Blogs from "./pages/Blogs";
+// import Blogs from "./pages/Blogs";
 import About from "./pages/about/About";
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/blogs" element={<Blogs />} />
+        {/* <Route path="/blogs" element={<Blogs />} /> */}
         <Route path="/contact" element={<Contact />} />
       </SlideRoutes>
 

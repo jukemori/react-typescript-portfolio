@@ -64,7 +64,7 @@ function Header() {
               </NavLink>
             </li>
 
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <NavLink
                 to="/blogs"
                 className={({ isActive }) =>
@@ -73,7 +73,7 @@ function Header() {
               >
                 <i className="uil uil-document-layout-left nav__icon"></i> Blogs
               </NavLink>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <NavLink
