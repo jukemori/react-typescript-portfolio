@@ -41,18 +41,18 @@ export const projectsData = [
       "devicon-postgresql-plain",
     ],
   },
-  {
-    id: 3,
-    title: "Retail App",
-    image: {
-      main: "v1691980521/Portfolio/RetailApp/main_aeofwp.jpg",
-      sub: "v1691980521/Portfolio/RetailApp/main_aeofwp.jpg",
-    },
-    category: "react",
-    description: "Mockup dynamic retail app made by react and typescript",
-    source: "https://github.com/jukemori/react-retailing-app",
-    tags: ["devicon-typescript-plain", "devicon-react-original"],
-  },
+  // {
+  //   id: 3,
+  //   title: "Retail App",
+  //   image: {
+  //     main: "v1691980521/Portfolio/RetailApp/main_aeofwp.jpg",
+  //     sub: "v1691980521/Portfolio/RetailApp/main_aeofwp.jpg",
+  //   },
+  //   category: "react",
+  //   description: "Mockup dynamic retail app made by react and typescript",
+  //   source: "https://github.com/jukemori/react-retailing-app",
+  //   tags: ["devicon-typescript-plain", "devicon-react-original"],
+  // },
   {
     id: 4,
     title: "Movie Watchlist",
