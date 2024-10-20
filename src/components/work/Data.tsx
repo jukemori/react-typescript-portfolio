@@ -77,6 +77,19 @@ export const projectsData = [
   },
   {
     id: 5,
+    title: "E-commerce",
+    image: {
+      main: 'v1729396662/Portfolio/E-Commerce/main_imonzl.png',
+      sub: 'v1729396685/Portfolio/E-Commerce/sub_bsd3eu.png'
+    },
+    category: "react",
+    description: "This project is an e-commerce website built with Next.js, utilizing Sanity as a headless CMS for content management and Stripe for payment processing.",
+    source: "https://github.com/jukemori/e-commerce",
+    tags: ["devicon-nextjs-plain", "devicon-typescript-plain", "devicon-react-original", "devicon-tailwindcss-plain-wordmark", "devicon-sanity-plain"],
+    url: "https://e-commerce-three-sigma-45.vercel.app/",
+  },
+  {
+    id: 6,
     title: "Threads Clone",
     image: {
       main: "v1691987466/Portfolio/Threads/sub_mfxtfc.jpg",
@@ -89,7 +102,7 @@ export const projectsData = [
     tags: ["devicon-typescript-plain", "devicon-react-original"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Product Cards",
     image: {
       main: "v1691980528/Portfolio/ProductCards/main-1_kepxgr.jpg",
@@ -102,7 +115,7 @@ export const projectsData = [
     tags: ["devicon-javascript-plain", "devicon-react-original"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Longest word game",
     image: {
       main: "v1691980488/Portfolio/WordGame/main-2_bvfufl.jpg",
